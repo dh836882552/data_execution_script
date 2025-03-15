@@ -1,6 +1,6 @@
 
 # # 设置 OpenAI API 密钥
-# openai.api_key = 'sk-svcacct-OSgZ3tU1dNXFbdJsTsS8Bc18xYs2I_RtMbbuujrHJHPqBanqzTGSsbZV2zigT3BlbkFJGWTThkyAmejqWt-aeGukO-EknTwyzxJVnc1jCTQOWC-uOxuygMcfE4zAzK4A'
+# openai.api_key = 'your_key'
 #
 # # 使用新 API（1.0.0 版本后）
 # response = openai.completions.create(
@@ -13,7 +13,7 @@
 
 
 # # 请将 "<deepseek api key>" 替换为您的DeepSeek API Key
-# client = OpenAI(api_key="<sk-b1310b5d012348e88c9facd1fd5b2eaf>", base_url="https://api.deepseek.com")
+# client = OpenAI(api_key="<your_key>", base_url="https://api.deepseek.com")
 # response = client.chat.completions.create(
 #     model="deepseek-chat",
 #     messages=[
@@ -40,8 +40,8 @@ from openai import OpenAI
 
 
 # 从环境变量中读取 API 密钥
-#deepseek_api_key = "sk-3deff8a15f7b4881aaadb19b9a458395"
-deepseek_api_key = "sk-cb041110cd844679a61ed0da6f6eef2f"
+#deepseek_api_key = "your_key"
+deepseek_api_key = "your_key"
 
 
 def deepseek_chat(message):
@@ -92,7 +92,7 @@ def gemini_qa(prompt: str):
             os.environ['https_proxy'] = f'{proxy_url}:{proxy_port}'
 
             # Configure your API key (best practice: use environment variables)
-            genai.configure(api_key="AIzaSyAdNrzNiRpwEK3WDle8ye2C5SUPovDyTfM")  # or genai.configure(api_key="AIzaSyAdNrzNiRpwEK3WDle8ye2C5SUPovDyTfM")
+            genai.configure(api_key="your_key")  
 
             # Initialize the model
             model = genai.GenerativeModel(
