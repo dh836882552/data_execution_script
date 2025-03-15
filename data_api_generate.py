@@ -12,7 +12,7 @@ from functools import partial
 from tqdm import tqdm
 
 # 从环境变量中读取 API 密钥
-genai.configure(api_key="AIzaSyAdNrzNiRpwEK3WDle8ye2C5SUPovDyTfM")  # 更换为正确的 API 密钥
+genai.configure(api_key="your_key")  # 更换为正确的 API 密钥
 
 
 def gemini_qa(prompts):
