@@ -28,8 +28,7 @@ def gemini_qa(prompt: str):
             os.environ['https_proxy'] = f'{proxy_url}:{proxy_port}'
 
             # Configure your API key (best practice: use environment variables)
-            genai.configure(api_key="AIzaSyAdNrzNiRpwEK3WDle8ye2C5SUPovDyTfM")  # or genai.configure(api_key="AIzaSyAdNrzNiRpwEK3WDle8ye2C5SUPovDyTfM")
-
+            genai.configure(api_key="your_key")  
             # Initialize the model
             model = genai.GenerativeModel(
                 'gemini-2.0-flash-thinking-exp')  # or 'gemini-pro-vision' for images, or the model you are trying to use.
