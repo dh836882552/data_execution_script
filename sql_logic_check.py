@@ -9,7 +9,7 @@ import pymysql
 import pandas as pd
 import openpyxl
 
-deepseek_api_key = "sk-cb041110cd844679a61ed0da6f6eef2f"
+deepseek_api_key = "your_key"
 
 
 def deepseek_chat(message):
@@ -57,7 +57,7 @@ def gemini_qa(prompt: str):
             os.environ['https_proxy'] = f'{proxy_url}:{proxy_port}'
 
             # Configure your API key (best practice: use environment variables)
-            genai.configure(api_key="AIzaSyAdNrzNiRpwEK3WDle8ye2C5SUPovDyTfM")  # or genai.configure(api_key="AIzaSyAdNrzNiRpwEK3WDle8ye2C5SUPovDyTfM")
+            genai.configure(api_key="your_key")  
 
             # Initialize the model
             model = genai.GenerativeModel(
